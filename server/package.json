@@ -1,0 +1,62 @@
+{
+  "name": "dynprot-server",
+  "version": "1.0.0",
+  "description": "DynProt backend server with PostgreSQL and OpenAI integration",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "jest",
+    "lint": "eslint . --fix"
+  },
+  "keywords": [
+    "protein",
+    "nutrition",
+    "tracking",
+    "health",
+    "fitness"
+  ],
+  "author": "DynProt Team",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.54.0",
+    "bcrypt": "^6.0.0",
+    "bcryptjs": "^2.4.3",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.5",
+    "express-validator": "^7.0.1",
+    "fs-extra": "^11.2.0",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "openai": "^4.24.1",
+    "pg": "^8.11.3",
+    "sharp": "^0.32.6",
+    "validator": "^13.11.0",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.55.0",
+    "eslint-config-node": "^4.1.0",
+    "eslint-plugin-node": "^11.1.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.2",
+    "supertest": "^6.3.3"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dynprot/server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dynprot/server/issues"
+  },
+  "homepage": "https://github.com/dynprot/server#readme"
+}
